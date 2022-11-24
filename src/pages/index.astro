@@ -4,6 +4,10 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout title="Welcome to Astro.">
   <main>
+    <img
+      src="https://res.cloudinary.com/jlengstorf/image/upload/f_auto,q_auto,w_200,ar_1,z_0.65,c_thumb,g_faces/press/jason-lengstorf-ac-alley3.jpg"
+      alt="Jason Lengstorf"
+    />
     <h1>Welcome to my brand new website!</h1>
     <p>I'll be updating this site regularly with what I'm learning.</p>
   </main>
@@ -16,8 +20,20 @@ import Layout from '../layouts/Layout.astro';
     max-width: 60ch;
   }
   h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 800;
     margin: 0;
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  img {
+    display: block;
+    margin: 0 auto 10px;
+    border-radius: 50%;
+    width: 100px;
   }
 </style>
